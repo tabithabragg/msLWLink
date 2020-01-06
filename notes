@@ -1,0 +1,4 @@
+Ryan Roye has provided a great python script to programmatically create a surface from a PBR based image set at
+https://forums.newtek.com/showthread.php/161309-How-to-edit-surfaces-in-layout-%28with-example%29
+
+Will be reaching out to him to get permission to include it in this git project.  It's simpler than I'd thought, though the method required leaves a lot to be desired in re: Lightwave's python SDK.   Maybe LW2020 will fix this.  
