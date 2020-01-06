@@ -1,0 +1,16 @@
+# some notes from the docs about how to initiate communications with the Megascans *website* assets database.  This does not use the bridge, but directly access the web assets.
+
+curl -i \
+     -u 'my_megascans_username' \
+     -H 'Content-type: application/json' \
+     -d '{"secret": "my_app_secret_key"}' \
+     https://accounts.quixel.se/api/v1/applications/[apptoken]/tokens
+
+Response: Token to use for further communications after authentication.
+{"token":"It's a really really long string that expires in 1-2 hours but can be refreshed at will to generate a new token"}
+
+curl -i \
+     -H Authorization: Bearer AUTHENTICATION_TOKEN
+     https://megascans.se/v1/assets?limit=24&view=myscans
+
+curl -i -H Authorization: Bearer that_really_long_token_string_you_retrieved_earlier https://megascans.se/v1/assets?limit=24&view=myscans
