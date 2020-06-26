@@ -1,3 +1,7 @@
+The quixel baseline python plugin for Bridge -> anything else  is on their github repo at: https://github.com/Quixel/Bridge-Python-Plugin
+
+Documentation is *very* limited and taking apart the other plugins (Houdini's live link plugin looks to be the one that'll be most useful to mine for information on hints on getting this working in LW)
+
 Ryan Roye has provided a great python script to programmatically create a surface from a PBR based image set at
 https://forums.newtek.com/showthread.php/161309-How-to-edit-surfaces-in-layout-%28with-example%29
 
